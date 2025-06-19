@@ -1,0 +1,124 @@
+:root {
+  --primary: #0077cc;
+  --primary-dark: #005fa3;
+  --bg-dark: #1a1a1a;
+  --bg-light: #f5f7fa;
+  --text-dark: #333;
+  --text-light: #f9f9f9;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, var(--bg-light), #c3cfe2);
+  color: var(--text-dark);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+header {
+  padding: 2rem;
+  background: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero.parallax {
+  background: url('https://images.unsplash.com/photo-1581092919535-478fa4b0e47c') center / cover no-repeat fixed;
+  padding: 6rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+.section, .cta, .feedback, .stats {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: auto;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cta {
+  background: var(--primary);
+  color: white;
+}
+
+.cta a {
+  background: var(--primary-dark);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feedback {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.feedback input,
+.feedback textarea,
+.feedback button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.feedback button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+footer {
+  background: var(--bg-dark);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
